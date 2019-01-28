@@ -43,6 +43,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const multipleA = document.getElementsByTagName("a");
 const tagNameA = Array.from(multipleA);
+console.log(tagNameA)
+
 
 
 tagNameA[0].textContent = "Service";
@@ -62,6 +64,55 @@ const btn = document.getElementsByTagName("button");
 const btn1 = Array.from(btn);
 
 btn1[0].textContent = "Get Started"
+
+const headerImg = document.querySelector("#cta-img")
+
+headerImg.setAttribute("src", "img/header-img.png");
+
+const mainContent = document.querySelectorAll(".text-content p");
+
+mainContent.forEach(element => {
+   element.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+ 
+})
+
+// mainContent[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// mainContent[1].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// mainContent[2].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// mainContent[3].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// mainContent[4].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
+const headerFour = document.getElementsByTagName("h4");
+
+const head4 = Array.from(headerFour);
+
+headerFour[0].textContent = "Features";
+headerFour[1].textContent = "About";
+headerFour[2].textContent = "Services";
+headerFour[3].textContent = "Product"
+headerFour[4].textContent = "Vision"
+headerFour[5].textContent = "Contact"
+
+
+console.log(headerFour);
+
+const midImg = document.querySelector("#middle-img")
+
+midImg.setAttribute("src", "img/mid-page-accent.jpg");
+
+const contactContent = document.querySelectorAll(".contact p");
+
+contactContent[0].textContent = "123 Way 456 Street Somewhere, USA"
+contactContent[1].textContent = "1 (888) 888-8888";
+contactContent[2].textContent = "sales@greatidea.io"
+
+const footerContent = document.querySelectorAll("footer p");
+
+footerContent[0].textContent = "Copyright Great Idea! 2018"
+
+
+
 
 
 

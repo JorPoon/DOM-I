@@ -106,7 +106,7 @@ midImg.setAttribute("src", "img/mid-page-accent.jpg");
 
 const contactContent = document.querySelectorAll(".contact p");
 
-contactContent[0].textContent = "123 Way 456 Street Somewhere, USA"
+contactContent[0].innerHTML = "123 Way 456 Street <br> Somewhere, USA"
 contactContent[1].textContent = "1 (888) 888-8888";
 contactContent[2].textContent = "sales@greatidea.io"
 

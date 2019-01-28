@@ -115,6 +115,14 @@ const footerContent = document.querySelectorAll("footer p");
 footerContent[0].textContent = "Copyright Great Idea! 2018"
 
 
+const blog = document.createElement("a");
+blog.textContent = "Blog";
+const nav = document.querySelector("nav");
+nav.appendChild(blog);
+
+const portfolio = document.createElement("a");
+portfolio.textContent = "Portfolio";
+nav.appendChild(portfolio);
 
 
 

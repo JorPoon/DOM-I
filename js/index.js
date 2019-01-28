@@ -55,9 +55,12 @@ tagNameA[4].textContent = " Contact";
 
 const header1 = document.getElementsByTagName("h1");
 
+
 const headTitle = Array.from(header1);
 
-headTitle[0].textContent = "DOM Is Awesome";
+headTitle[0].textContent = "DOM\n Is\n Awesome";
+
+
 
 const btn = document.getElementsByTagName("button");
 

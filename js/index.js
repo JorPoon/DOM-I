@@ -49,9 +49,14 @@ console.log(tagNameA)
 
 tagNameA[0].textContent = "Service";
 tagNameA[1].textContent = "Product";
-tagNameA[2].textContent = "Features";
-tagNameA[3].textContent = " About"; 
-tagNameA[4].textContent = " Contact"; 
+tagNameA[2].textContent = "Vision";
+tagNameA[3].textContent = "Features"; 
+tagNameA[4].textContent = "About"; 
+tagNameA[5].textContent= "Contact";
+
+tagNameA.forEach(element => {
+  element.style.color = "green";
+})
 
 const header1 = document.querySelector(".cta-text h1");
 
@@ -117,12 +122,18 @@ footerContent[0].textContent = "Copyright Great Idea! 2018"
 
 const blog = document.createElement("a");
 blog.textContent = "Blog";
+blog.style.color = "green";
 const nav = document.querySelector("nav");
 nav.appendChild(blog);
 
 const portfolio = document.createElement("a");
 portfolio.textContent = "Portfolio";
+portfolio.style.color = "green"
 nav.appendChild(portfolio);
+
+
+
+
 
 
 

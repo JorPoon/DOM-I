@@ -95,15 +95,16 @@ const headerFour = document.getElementsByTagName("h4");
 
 const head4 = Array.from(headerFour);
 
-headerFour[0].textContent = "Features";
-headerFour[1].textContent = "About";
+head4[0].textContent = "Features";
+head4[1].textContent = "About";
 headerFour[2].textContent = "Services";
 headerFour[3].textContent = "Product"
 headerFour[4].textContent = "Vision"
 headerFour[5].textContent = "Contact"
 
 
-//console.log(headerFour);
+console.log(head4);
+console.log(headerFour);
 
 const midImg = document.querySelector("#middle-img")
 

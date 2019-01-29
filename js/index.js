@@ -103,7 +103,7 @@ headerFour[4].textContent = "Vision"
 headerFour[5].textContent = "Contact"
 
 
-console.log(headerFour);
+//console.log(headerFour);
 
 const midImg = document.querySelector("#middle-img")
 
@@ -119,6 +119,7 @@ const footerContent = document.querySelectorAll("footer p");
 
 footerContent[0].textContent = "Copyright Great Idea! 2018"
 
+// NEW NAV TAGS
 
 const blog = document.createElement("a");
 blog.textContent = "Blog";

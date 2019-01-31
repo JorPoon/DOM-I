@@ -47,12 +47,12 @@ console.log(tagNameA)
 
 
 
-tagNameA[0].textContent = "Service";
-tagNameA[1].textContent = "Product";
-tagNameA[2].textContent = "Vision";
-tagNameA[3].textContent = "Features"; 
-tagNameA[4].textContent = "About"; 
-tagNameA[5].textContent= "Contact";
+tagNameA[0].textContent = siteContent["nav"]["nav-item-1"];
+tagNameA[1].textContent = siteContent["nav"]["nav-item-2"];
+tagNameA[2].textContent = siteContent["nav"]["nav-item-3"];
+tagNameA[3].textContent = siteContent["nav"]["nav-item-4"]; 
+tagNameA[4].textContent = siteContent["nav"]["nav-item-5"]; 
+tagNameA[5].textContent= siteContent["nav"]["nav-item-6"];
 
 tagNameA.forEach(element => {
   element.style.color = "green";
@@ -71,7 +71,7 @@ const btn = document.getElementsByTagName("button");
 
 const btn1 = Array.from(btn);
 
-btn1[0].textContent = "Get Started"
+btn1[0].textContent = siteContent["cta"]["button"];
 
 const headerImg = document.querySelector("#cta-img")
 
@@ -79,28 +79,28 @@ headerImg.setAttribute("src", "img/header-img.png");
 
 const mainContent = document.querySelectorAll(".text-content p");
 
-mainContent.forEach(element => {
-   element.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+// mainContent.forEach(element => {
+//    element.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
  
-})
+// })
 
-// mainContent[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-// mainContent[1].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-// mainContent[2].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-// mainContent[3].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-// mainContent[4].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+mainContent[0].textContent = siteContent["main-content"]["features-content"];
+mainContent[1].textContent = siteContent["main-content"]["about-content"];
+mainContent[2].textContent = siteContent["main-content"]["services-content"];
+mainContent[3].textContent = siteContent["main-content"]["product-content"];
+mainContent[4].textContent = siteContent["main-content"]["vision-content"];
 
 
 const headerFour = document.getElementsByTagName("h4");
 
 const head4 = Array.from(headerFour);
 
-head4[0].textContent = "Features";
-head4[1].textContent = "About";
-headerFour[2].textContent = "Services";
-headerFour[3].textContent = "Product"
-headerFour[4].textContent = "Vision"
-headerFour[5].textContent = "Contact"
+head4[0].textContent = siteContent["main-content"]["features-h4"];
+head4[1].textContent = siteContent["main-content"]["about-h4"];
+headerFour[2].textContent = siteContent["main-content"]["services-h4"];
+headerFour[3].textContent = siteContent["main-content"]["product-h4"];
+headerFour[4].textContent = siteContent["main-content"]["vision-h4"];
+headerFour[5].textContent = siteContent["contact"]["contact-h4"];
 
 
 console.log(head4);
@@ -108,17 +108,17 @@ console.log(headerFour);
 
 const midImg = document.querySelector("#middle-img")
 
-midImg.setAttribute("src", "img/mid-page-accent.jpg");
+midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 const contactContent = document.querySelectorAll(".contact p");
 
-contactContent[0].innerHTML = "123 Way 456 Street <br> Somewhere, USA"
-contactContent[1].textContent = "1 (888) 888-8888";
-contactContent[2].textContent = "sales@greatidea.io"
+contactContent[0].innerHTML = siteContent["contact"]["address"];
+contactContent[1].textContent = siteContent["contact"]["phone"];
+contactContent[2].textContent = siteContent["contact"]["email"];
 
 const footerContent = document.querySelectorAll("footer p");
 
-footerContent[0].textContent = "Copyright Great Idea! 2018"
+footerContent[0].textContent = siteContent["footer"]["copyright"];
 
 // NEW NAV TAGS
 
